@@ -1,0 +1,50 @@
+{
+  "name": "soccarena-match-scraper",
+  "version": "1.0.0",
+  "description": "Web scraper based off @browsercat/playwright-automation-starter",
+  "keywords": [
+    "playwright",
+    "browser automation",
+    "typescript",
+    "headless browsers",
+    "web scraping",
+    "web crawler",
+    "browser testing"
+  ],
+  "author": {
+    "name": "ignaguri"
+  },
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf .test",
+    "dev:bcat:watch": "dotenv -v BCAT=1 -- tsx --watch src/index.ts",
+    "dev:bcat": "dotenv -v BCAT=1 -- tsx src/index.ts",
+    "dev:watch": "dotenv -- tsx --watch src/index.ts",
+    "dev": "dotenv -- tsx src/index.ts",
+    "lint": "eslint --ignore-path .eslintignore --ext .js,.ts",
+    "test:bcat:watch": "dotenv -v BCAT=1 -- playwright test --ui",
+    "test:bcat": "dotenv -v BCAT=1 -- playwright test",
+    "test:watch": "dotenv -- playwright test --ui",
+    "test": "dotenv -- playwright test",
+    "type": "tsc --noEmit"
+  },
+  "dependencies": {
+    "playwright": "1.41.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.41.1",
+    "@tsconfig/node20": "20.1.2",
+    "@tsconfig/strictest": "2.0.2",
+    "@types/node": "=20",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "dotenv-cli": "7.3.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.5",
+    "tsx": "4.7.0",
+    "typescript": "5.3.3",
+    "typescript-eslint": "^7.0.1"
+  }
+}
